@@ -11,8 +11,8 @@ else
 fi
 
 rsync -a --delete \
-  --exclude=config.php \
-  --exclude=moodledata \
+  --exclude=/config.php \
+  --exclude=/moodledata \
   "$SRC"/ "$DEST"/
 
 mkdir -p /var/www/moodledata
