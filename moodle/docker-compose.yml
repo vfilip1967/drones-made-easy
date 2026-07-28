@@ -1,0 +1,70 @@
+services:
+  moodle-db:
+    image: mariadb:10.11
+    container_name: moodle-db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: moodle
+      MYSQL_USER: moodle_app
+      MYSQL_PASSWORD: ${MOODLE_DB_PASSWORD}
+    command: >
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_unicode_ci
+      --innodb-file-per-table=1
+    volumes:
+      - moodle-db-data:/var/lib/mysql
+    networks:
+      - moodle-net
+    mem_limit: 900m
+    mem_reservation: 512m
+    cpus: 0.75
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      start_period: 30s
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  moodle-app:
+    build:
+      context: .
+      args:
+        MOODLE_BRANCH: MOODLE_502_STABLE
+    image: moodle-sch:5.2
+    container_name: moodle-app
+    restart: unless-stopped
+    depends_on:
+      moodle-db:
+        condition: service_healthy
+    environment:
+      TZ: Europe/Athens
+    ports:
+      - "127.0.0.1:8081:80"   # loopback only — nginx proxies externally, same pattern as filipakis-wp:8080
+    volumes:
+      - moodle-html:/var/www/html
+      - moodle-data:/var/www/moodledata
+    networks:
+      - moodle-net
+    mem_limit: 2g
+    mem_reservation: 1g
+    cpus: 1.5
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/login/index.php"]
+      start_period: 60s
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+volumes:
+  moodle-db-data:
+    name: moodle-db-data
+  moodle-html:
+    name: moodle-html
+  moodle-data:
+    name: moodle-data
+
+networks:
+  moodle-net:
+    name: moodle-net
+    driver: bridge
