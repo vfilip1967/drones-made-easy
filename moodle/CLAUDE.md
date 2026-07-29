@@ -32,6 +32,12 @@ different, larger problem.
 - **UI language: English (`en`)**, confirmed with the teacher on 2026-07-28 despite all course
   content being in Greek — do not switch to `el` without them asking again.
 - **Site full name: "Drones Made Easy"**, confirmed with the teacher on 2026-07-28.
+- **`$CFG->sslproxy = true;` is required in `config.php`**, added manually after install (not in
+  the original doc). Without it, Moodle can't tell the incoming request was HTTPS (nginx
+  terminates TLS and proxies to the container over plain HTTP) and enters an infinite redirect
+  loop trying to force itself onto HTTPS. Since `config.php` is gitignored and lives only in the
+  `moodle-html` volume, **any future fresh install must re-add this line by hand** — it will not
+  survive a volume wipe. Add right after `$CFG->admin = 'admin';`, then `docker restart moodle-app`.
 
 ## Hard rules
 - `.env`, `config.php`, and anything from the `moodledata` volume NEVER get committed. Check
