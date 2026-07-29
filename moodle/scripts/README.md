@@ -13,6 +13,15 @@ Scripts για την αυτόματη δημιουργία περιεχομέν
   ανοιχτό transaction.
 - Το `mod_quiz` θέλει ρητά `password`, `subnet`, `overduehandling` κ.λπ. — τα defaults
   του schema δεν αρκούν.
+- Το `mod_assign` θέλει ακόμα περισσότερα ρητά πεδία: `submissiondrafts`,
+  `requiresubmissionstatement`, `teamsubmission` κ.λπ. — δες `make_assigns.php`.
+- **`mod_page` bug που προκάλεσε πραγματικό κενό περιεχόμενο (29/7/2026):**
+  `page_add_instance()` αντιγράφει το `$data->page['text']` στο `$data->content` ΜΟΝΟ όταν
+  καλείται με μη-null `$mform`. Το `add_moduleinfo()` περνάει πάντα `$mform = null` από CLI
+  κώδικα, οπότε αν στήσεις `$mi->page = ['text'=>...]` το Page βγαίνει **εντελώς άδειο,
+  χωρίς κανένα error**. Σωστός τρόπος: όρισε απευθείας `$mi->content` / `$mi->contentformat`
+  (βλέπε `make_page.php`). Αν κάποιο Page που έφτιαξες φαίνεται κενό, αυτό είναι το πρώτο
+  πράγμα να ελέγξεις.
 
 ## Χρήση
 
