@@ -65,7 +65,23 @@ curl -s http://127.0.0.1:8081/login/index.php -o /dev/null -w "%{http_code}\n"  
 ```
 
 ## Integration
-Talk to Moodle over its REST Web Services API (token in `.env`), not a custom plugin. See §11 of
-the repo-root `CLAUDE.md` for the enabled functions and example calls. No MCP server is installed
-(evaluated and rejected 2026-07 — all candidates were single-maintainer hobby projects; re-evaluate
-in 2027).
+Talk to Moodle over its REST Web Services API (token in `.env` as `MOODLE_WS_TOKEN`), not a custom
+plugin. No MCP server is installed (evaluated and rejected 2026-07 — all candidates were
+single-maintainer hobby projects; re-evaluate in 2027).
+
+`claude-integration` (id 3) holds the `Claude API` system role (webservice/rest:use,
+moodle/course:view, moodle/user:viewdetails, mod/assign:grade) via the `Claude Integration`
+external service, authorized for: `core_course_get_courses`, `core_user_get_users`,
+`core_enrol_get_enrolled_users`, `mod_assign_get_assignments`, `mod_assign_get_submissions`,
+`gradereport_user_get_grade_items`, `core_calendar_get_calendar_events`. Verified working
+2026-07-29:
+
+```bash
+source /opt/moodle-sch/.env
+curl -s "https://sch.filipakis.com/webservice/rest/server.php" \
+  --data-urlencode "wstoken=$MOODLE_WS_TOKEN" \
+  --data-urlencode "wsfunction=core_course_get_courses" \
+  --data-urlencode "moodlewsrestformat=json"
+```
+Add more functions to the `Claude Integration` service's authorized function list as real use
+cases appear — don't pre-authorize beyond what's actually called.
