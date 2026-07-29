@@ -15,6 +15,11 @@ Scripts για την αυτόματη δημιουργία περιεχομέν
   του schema δεν αρκούν.
 - Το `mod_assign` θέλει ακόμα περισσότερα ρητά πεδία: `submissiondrafts`,
   `requiresubmissionstatement`, `teamsubmission` κ.λπ. — δες `make_assigns.php`.
+- **Ενσωμάτωση εικόνας σε Page content:** τόσο `<svg>` inline όσο και `<img src="data:...">` (base64)
+  **αφαιρούνται αθόρυβα** από το `format_text()` HTML purifier — καμία εξαίρεση, απλά εξαφανίζεται.
+  Ο μόνος αξιόπιστος τρόπος: ανέβασμα μέσω File API (`get_file_storage()->create_file_from_pathname()`,
+  component `mod_page`, filearea `content`, ίδιο itemid με το page) και αναφορά με πραγματικό
+  `pluginfile.php` URL (`moodle_url::make_pluginfile_url()`). Δες `add_diagram.php`.
 - **`mod_page` bug που προκάλεσε πραγματικό κενό περιεχόμενο (29/7/2026):**
   `page_add_instance()` αντιγράφει το `$data->page['text']` στο `$data->content` ΜΟΝΟ όταν
   καλείται με μη-null `$mform`. Το `add_moduleinfo()` περνάει πάντα `$mform = null` από CLI

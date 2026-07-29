@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" font-family="Arial, sans-serif">
+  <style>
+    .lbl { font-size: 15px; fill: #222; }
+    .lbl-b { font-size: 15px; fill: #222; font-weight: bold; }
+    .small { font-size: 12px; fill: #555; }
+    .plus  { font-size: 20px; fill: #b00020; font-weight: bold; }
+    .minus { font-size: 20px; fill: #1a1a1a; font-weight: bold; }
+  </style>
+
+  <rect x="0" y="0" width="900" height="720" fill="#ffffff" stroke="#ddd"/>
+
+  <!-- ============ TOP: ΥΛΙΚΑ ============ -->
+  <text x="20" y="30" class="lbl-b" font-size="20">Υλικά (ανά μαθητή/ζευγάρι)</text>
+
+  <!-- LED -->
+  <g transform="translate(50,55)">
+    <circle cx="40" cy="40" r="30" fill="#fff3b0" stroke="#c9a400" stroke-width="2"/>
+    <line x1="30" y1="68" x2="15" y2="105" stroke="#333" stroke-width="3"/>
+    <line x1="50" y1="68" x2="65" y2="105" stroke="#333" stroke-width="3"/>
+    <text x="40" y="128" class="small" text-anchor="middle">μακρύ πόδι = (+) άνοδος</text>
+    <text x="40" y="146" class="small" text-anchor="middle">κοντό πόδι = (−) κάθοδος</text>
+    <text x="40" y="175" class="lbl-b" text-anchor="middle">LED (5mm)</text>
+  </g>
+
+  <!-- Resistor -->
+  <g transform="translate(280,90)">
+    <line x1="0" y1="20" x2="20" y2="20" stroke="#333" stroke-width="3"/>
+    <rect x="20" y="5" width="70" height="30" rx="4" fill="#f0e6d2" stroke="#8a6d3b" stroke-width="2"/>
+    <rect x="30" y="5" width="6" height="30" fill="#b7472a"/>
+    <rect x="45" y="5" width="6" height="30" fill="#b7472a"/>
+    <rect x="60" y="5" width="6" height="30" fill="#7a4a1e"/>
+    <line x1="90" y1="20" x2="110" y2="20" stroke="#333" stroke-width="3"/>
+    <text x="55" y="70" class="lbl-b" text-anchor="middle">Αντίσταση</text>
+    <text x="55" y="88" class="lbl-b" text-anchor="middle">220-330Ω</text>
+  </g>
+
+  <!-- Coin cell battery -->
+  <g transform="translate(490,55)">
+    <circle cx="45" cy="45" r="45" fill="#d9d9d9" stroke="#666" stroke-width="2"/>
+    <circle cx="45" cy="45" r="30" fill="#bfbfbf" stroke="#666" stroke-width="1"/>
+    <text x="35" y="52" class="plus">+</text>
+    <text x="45" y="128" class="small" text-anchor="middle">(πάνω επιφάνεια = +)</text>
+    <text x="45" y="150" class="lbl-b" text-anchor="middle">Μπαταρία CR2032 (3V)</text>
+  </g>
+
+  <!-- Wires -->
+  <g transform="translate(690,75)">
+    <path d="M0,10 Q30,-10 60,10 T120,10" stroke="#c0392b" stroke-width="4" fill="none"/>
+    <path d="M0,45 Q30,25 60,45 T120,45" stroke="#2c3e50" stroke-width="4" fill="none"/>
+    <text x="60" y="90" class="lbl-b" text-anchor="middle">2× καλώδιο ~10cm</text>
+    <text x="60" y="108" class="small" text-anchor="middle">(1 κόκκινο +, 1 μαύρο −)</text>
+  </g>
+
+  <!-- divider -->
+  <line x1="20" y1="280" x2="880" y2="280" stroke="#999" stroke-width="1" stroke-dasharray="6,4"/>
+
+  <!-- ============ BOTTOM: ΤΕΛΙΚΟ ΚΥΚΛΩΜΑ ============ -->
+  <text x="20" y="315" class="lbl-b" font-size="20">Τελικό κύκλωμα — έτσι πρέπει να μοιάζει όταν το ανεβάσεις</text>
+
+  <!-- battery -->
+  <g transform="translate(60,360)">
+    <circle cx="50" cy="50" r="50" fill="#d9d9d9" stroke="#666" stroke-width="2"/>
+    <text x="35" y="42" class="plus">+</text>
+    <text x="33" y="82" class="minus">−</text>
+    <text x="50" y="130" class="small" text-anchor="middle">CR2032</text>
+  </g>
+
+  <!-- wire battery+ -> resistor -->
+  <path d="M160,380 H260" stroke="#c0392b" stroke-width="5" fill="none"/>
+  <polygon points="260,380 250,375 250,385" fill="#c0392b"/>
+
+  <!-- resistor -->
+  <g transform="translate(270,365)">
+    <rect x="0" y="0" width="80" height="30" rx="4" fill="#f0e6d2" stroke="#8a6d3b" stroke-width="2"/>
+    <rect x="10" y="0" width="6" height="30" fill="#b7472a"/>
+    <rect x="25" y="0" width="6" height="30" fill="#b7472a"/>
+    <rect x="40" y="0" width="6" height="30" fill="#7a4a1e"/>
+    <text x="40" y="-8" class="small" text-anchor="middle">220-330Ω</text>
+  </g>
+
+  <!-- wire resistor -> LED anode -->
+  <path d="M350,380 H430" stroke="#c0392b" stroke-width="5" fill="none"/>
+  <polygon points="430,380 420,375 420,385" fill="#c0392b"/>
+
+  <!-- LED -->
+  <g transform="translate(440,340)">
+    <circle cx="40" cy="40" r="35" fill="#fff3b0" stroke="#c9a400" stroke-width="3"/>
+    <text x="40" y="46" font-size="14" fill="#333" text-anchor="middle">LED</text>
+    <text x="40" y="100" class="small" text-anchor="middle">(+) εδώ, από αντίσταση</text>
+    <text x="40" y="118" class="small" text-anchor="middle">(−) πάνω πόδι →</text>
+  </g>
+
+  <!-- wire LED cathode -> battery- : routed further right/down to clear the labels -->
+  <path d="M500,415 V540 H160 V440" stroke="#2c3e50" stroke-width="5" fill="none"/>
+  <polygon points="160,440 155,450 165,450" fill="#2c3e50"/>
+
+  <!-- explanation column, moved further right and down to avoid the LED labels -->
+  <text x="610" y="370" class="lbl">➜ Ροή:</text>
+  <text x="610" y="392" class="lbl">μπαταρία(+) → καλώδιο</text>
+  <text x="610" y="414" class="lbl">→ αντίσταση → LED άνοδος</text>
+  <text x="610" y="436" class="lbl">→ LED κάθοδος → καλώδιο</text>
+  <text x="610" y="458" class="lbl">→ μπαταρία(−)</text>
+  <text x="610" y="500" class="lbl-b" fill="#1a7a1a" font-size="17">✓ Αν ανάβει: σωστό!</text>
+  <text x="610" y="525" class="small">Αν όχι: γύρισε την πολικότητα του LED</text>
+
+  <text x="20" y="700" class="small">Σημείωση: σχηματικό διάγραμμα (όχι φωτογραφία) — δείχνει σωστά την πολικότητα και τη σειρά σύνδεσης.</text>
+</svg>
