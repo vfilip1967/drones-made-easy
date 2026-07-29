@@ -7,6 +7,14 @@ production business system — treat it with real care (it will hold student dat
 patterns from the n8n-workflows or milatos-add-hotels sessions on this same server; they solve a
 different, larger problem.
 
+## Where things live (decided 2026-07-29)
+**Moodle (`drones-sar-2026` course) is the primary reference and collaboration hub** for the
+teacher, students, and this session — the book, the weekly schedule, quizzes, and all submission
+activities live there, not in chat or in loose files. **GitHub is a log, not a workspace**: it keeps
+the scripts and their history (`moodle/scripts/`), not the live content itself — content changes
+happen by running the scripts against the live site, and the scripts get committed afterward as a
+record of what was done, same as any other infra change in this repo.
+
 ## What this session owns
 - `/opt/moodle-sch/` — the live Docker stack (docker-compose.yml, .env, Dockerfile)
 - `/etc/nginx/sites-enabled/sch.filipakis.com` — the nginx vhost
