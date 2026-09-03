@@ -46,6 +46,18 @@ record of what was done, same as any other infra change in this repo.
   loop trying to force itself onto HTTPS. Since `config.php` is gitignored and lives only in the
   `moodle-html` volume, **any future fresh install must re-add this line by hand** — it will not
   survive a volume wipe. Add right after `$CFG->admin = 'admin';`, then `docker restart moodle-app`.
+- **The `media_youtube` player is disabled site-wide, on purpose** (2026-09-03). Embedded YouTube
+  players — videojs *and* the classic `youtube.com/embed` iframe — do not work in the Moodle
+  mobile app here: the app rewrites the embed's `src` to route through
+  `admin/tool/mobile/autologin.php`, and Moodle refuses to render that page inside an iframe
+  (`X-Frame-Options`), so students see `net::ERR_BLOCKED_BY_RESPONSE` inline. With the player
+  disabled, YouTube URLs stay plain links, which the app opens in the system browser / YouTube
+  app. **Do not re-enable the YouTube media player** without a new plan for app playback. Also
+  changed while diagnosing (all harmless to leave as-is): `media_videojs | youtube = 0`,
+  `media_youtube | nocookie = 1`, `tool_mobile | scriptallowlist` = youtube/vimeo domains. These
+  are DB settings — a volume wipe loses them; re-apply via
+  `\core\plugininfo\media::enable_plugin('youtube', 0)` + `admin/cli/cfg.php`. Course-content side
+  of the same fix: `moodle/scripts/fix_videos.php` (Κεφ.14β book chapter, id 7).
 
 ## Hard rules
 - `.env`, `config.php`, and anything from the `moodledata` volume NEVER get committed. Check
