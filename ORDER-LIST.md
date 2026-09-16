@@ -277,3 +277,27 @@ payment doesn't complete.
 - iMAX B6 6S balance board -> the B6 has built-in per-cell sockets. [§A.3]
 - LED arm strip -> dropped from scope. [§A.2]
 - Faster LiPo charger, extra "third hands", extra smoke stoppers -> decide later. [§D]
+
+--- G.6  CONFIRMED ARRIVED 2026-09-16 (photo-verified) ---
+From G.1: 900M-T soldering tips; ESPLB solder wire x3 spools; SanDisk microSD 32GB;
+battery non-slip pad; 2nd silicone heat mat ("Repair Pad").
+From G.2: aluminium desoldering pump x2; SAMZHE needle-nose pliers x2; NC-559-ASM gel flux x2;
+automatic wire stripper x2; NE555 LED practice kit (4 of 5 counted in photo - check the 5th);
+LiPo voltage tester (only 1 of 2 visible in photo - check the 2nd); Deli diagonal pliers x2;
+mini diagonal pliers/cutter; double-sided perfboard x2; brass-wool tip cleaner x2.
+
+⚠️ Two things to double-check physically (not urgent, just verify next time you're at the box):
+- The "Deli diagonal pliers" package is printed **"PLASTIC NIPPERS" (DL0305A)** — that's a
+  cutter meant for plastic sprue, not the CR-V metal wire cutter that was ordered. Might be a
+  wrong-item substitution by the seller, or just misleading packaging text on a normal metal
+  cutter. Check the jaws are metal-rated before using it on 12AWG/servo wire.
+- A pair of small **2.0mm solder wire spools (1.5m each)** showed up bundled with the flux
+  paste order - not on the original order line (which was 0.8mm x3=300g, separately confirmed
+  arrived above). Harmless bonus/sample, most likely came free with the NC-559 flux kit.
+
+**Still NOT confirmed arrived** (not in today's photos - unchanged 🚚 on the Moodle status page
+and here): SpeedyBee backup stack; **both 936R soldering stations** (blocking - needed before
+Εβδ. 2 κόλληση); silicone wire kit 22AWG; AA battery holders ×30; red hookup wire 24AWG;
+loose LED ×200 / 220R ×200 (W2 kit); JCD iron stand holders; heat-shrink kit; digital
+multimeter; Kapton tape; RC Tools hex driver set; the camping-gas-stove mistake item; the
+unidentified EUR 15.91 order.
