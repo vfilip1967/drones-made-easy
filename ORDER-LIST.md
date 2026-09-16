@@ -295,9 +295,22 @@ mini diagonal pliers/cutter; double-sided perfboard x2; brass-wool tip cleaner x
   paste order - not on the original order line (which was 0.8mm x3=300g, separately confirmed
   arrived above). Harmless bonus/sample, most likely came free with the NC-559 flux kit.
 
-**Still NOT confirmed arrived** (not in today's photos - unchanged 🚚 on the Moodle status page
-and here): SpeedyBee backup stack; **both 936R soldering stations** (blocking - needed before
-Εβδ. 2 κόλληση); silicone wire kit 22AWG; AA battery holders ×30; red hookup wire 24AWG;
-loose LED ×200 / 220R ×200 (W2 kit); JCD iron stand holders; heat-shrink kit; digital
-multimeter; Kapton tape; RC Tools hex driver set; the camping-gas-stove mistake item; the
-unidentified EUR 15.91 order.
+--- G.7  CONFIRMED ARRIVED 2026-09-16, second batch same day (photo-verified) ---
+From G.1: SpeedyBee F405 V5 OX32 55A backup stack; red silicone hookup wire 24AWG x2 (20m);
+2xAA battery holders x30 (bag hand-labelled "Ω"); 220R resistors x200 (loose, hand-labelled
+"220R").
+From G.2: heat-shrink tubing kit incl. heat gun (box says "Heat Gun", matches the WITH-gun
+variant that was ordered - good, confirms the right one shipped, not the duplicate); digital
+multimeter (ANENG High Precision, model SZ304/SZ305 range shown on box).
+
+**Still NOT confirmed arrived** (not in any photo yet - unchanged 🚚 on the Moodle status page
+and here): **both 936R soldering stations** (blocking - needed before Εβδ. 2 κόλληση, the
+single most important thing still missing); loose LED ×200 (5mm) - only the 220R resistors
+have shown up so far, not the LEDs from the same G.1 line; silicone wire kit 22AWG; JCD iron
+stand holders x2; Kapton tape x2; RC Tools hex driver set; the camping-gas-stove mistake item;
+the unidentified EUR 15.91 order. Locally-bought items (AA alkaline batteries, isopropyl
+alcohol, §G.4) are separate from AliExpress and untracked here either way.
+
+**Moodle status page** (`📦 Υλικά Build — Κατάσταση`) now also shows a **Εβδ. (week) column**
+next to the drone-parts and soldering-equipment tables, so students can see which week each
+item is actually needed for — added 2026-09-16 per the teacher's request.
