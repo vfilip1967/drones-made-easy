@@ -303,13 +303,18 @@ From G.2: heat-shrink tubing kit incl. heat gun (box says "Heat Gun", matches th
 variant that was ordered - good, confirms the right one shipped, not the duplicate); digital
 multimeter (ANENG High Precision, model SZ304/SZ305 range shown on box).
 
+--- G.8  CONFIRMED ARRIVED 2026-09-16, third batch same day (photo-verified) ---
+From G.1: 5mm LED ×200 (loose, red); silicone wire kit 22AWG 6 colours.
+From G.1: **both 936R soldering stations** — photo showed a digital adjustable-temp iron
+handle (buttons/display on the handle itself) matching "adjustable temp + LCD"; teacher
+confirmed identification. **This was the single blocking item for Εβδ. 2 - now cleared.**
+
 **Still NOT confirmed arrived** (not in any photo yet - unchanged 🚚 on the Moodle status page
-and here): **both 936R soldering stations** (blocking - needed before Εβδ. 2 κόλληση, the
-single most important thing still missing); loose LED ×200 (5mm) - only the 220R resistors
-have shown up so far, not the LEDs from the same G.1 line; silicone wire kit 22AWG; JCD iron
-stand holders x2; Kapton tape x2; RC Tools hex driver set; the camping-gas-stove mistake item;
-the unidentified EUR 15.91 order. Locally-bought items (AA alkaline batteries, isopropyl
-alcohol, §G.4) are separate from AliExpress and untracked here either way.
+and here): JCD iron stand holders x2; Kapton tape x2; RC Tools hex driver set; the
+camping-gas-stove mistake item; the unidentified EUR 15.91 order. None of these block Εβδ. 2 -
+everything needed for the soldering-practice week is now confirmed on hand. Locally-bought
+items (AA alkaline batteries, isopropyl alcohol, §G.4) are separate from AliExpress and
+untracked here either way.
 
 **Moodle status page** (`📦 Υλικά Build — Κατάσταση`) now also shows a **Εβδ. (week) column**
 next to the drone-parts and soldering-equipment tables, so students can see which week each
