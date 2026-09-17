@@ -151,8 +151,11 @@ REUSABLE (shared across all sections + future years):
 ===================================================================
 - Multimeter — have 1; [x] ORDERED 2026-09-03 (see §G) a 2nd (one per bench). W7 short-check.
   Confirm the one on hand has a 9V battery.
-- 3rd-4th "third hand" / PCB holder — have 2 (Pro'sKit SN-390 board vise + magnifier helping-
-  hands). Enough for 2 benches; no more needed.
+- [ ] CORRECTED 2026-09-17: only have **1x Pro'sKit SN-390** (board vise + magnifier
+  helping-hands) **+ 1x separate basic alligator-clip "3rd hand"** — 2 different tools, one
+  each, NOT 2x SN-390 as previously logged. This is NOT enough for 2 benches to run the W2
+  LED-soldering exercise in parallel (§C) — order a 2nd cheap 3rd-hand/helping-hand
+  (~EUR 5-8) so each bench has one, or plan to share/rotate the single set between benches.
 - 2nd-3rd VIFLY ShortSaver 2 smoke stopper — have 1 (enough); more avoids a W7 bottleneck.
 - [x] ORDERED 2026-09-03 (see §G) — 2nd flux — see §B (NC-559-ASM gel flux x2).
 - [x] ORDERED 2026-09-03 (see §G) — Solder-practice kits — NE555 blinking-LED kit x5. Controlled
@@ -204,8 +207,9 @@ VIFLY ShortSaver 2 smoke stopper, conformal coating (2 bottles), threadlocker 24
 solder (100g - topping up in B), 12AWG + 26AWG wire, servos x2 + metal servo horns (2 styles),
 soldering stand + tip cleaner, multimeter, battery straps (3x PHISITAL),
 iMAX B6 charge lead set (XT60 + JST + banana + barrel adapters).
-Bench kit (confirmed by photo 2026-09-03): blue silicone heat mat ~45x30cm; 2x "third hand" =
-Pro'sKit SN-390 PCB holder + magnifier helping-hands (with solder-spool spring); ~115-in-1
+Bench kit (confirmed by photo 2026-09-03, CORRECTED 2026-09-17): blue silicone heat mat
+~45x30cm; **1x Pro'sKit SN-390 PCB holder w/ magnifier + solder-spool spring, plus a separate
+1x basic 3rd-hand alligator clip** (2 different tools, 1 each - not 2x SN-390); ~115-in-1
 precision screwdriver bit set (incl. hex 1.5/2.0/2.5mm for M2/M3, Phillips, Torx) + plastic
 pry tools/spudgers; precision flush cutter (rated ~1.3mm Cu / ~16AWG - fine work only);
 4x ESD tweezers (2 straight fine, 1 curved, 1 flat SMD); hot glue gun; 2x basic pencil
