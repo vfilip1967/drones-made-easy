@@ -151,11 +151,13 @@ REUSABLE (shared across all sections + future years):
 ===================================================================
 - Multimeter — have 1; [x] ORDERED 2026-09-03 (see §G) a 2nd (one per bench). W7 short-check.
   Confirm the one on hand has a 9V battery.
-- [ ] CORRECTED 2026-09-17: only have **1x Pro'sKit SN-390** (board vise + magnifier
-  helping-hands) **+ 1x separate basic alligator-clip "3rd hand"** — 2 different tools, one
-  each, NOT 2x SN-390 as previously logged. This is NOT enough for 2 benches to run the W2
-  LED-soldering exercise in parallel (§C) — order a 2nd cheap 3rd-hand/helping-hand
-  (~EUR 5-8) so each bench has one, or plan to share/rotate the single set between benches.
+- [x] CORRECTED 2026-09-17: only have **1x Pro'sKit SN-390** (PCB *vise/clamp* + magnifier
+  arm — clamps a single flat board or wire steady, NOT alligator-clip hands) **+ 1x separate
+  basic alligator-clip "3rd hand"** (this one has the clip arms for holding 2 free wire ends
+  together). 2 different tools, 1 each, NOT 2x SN-390 as previously logged. **No purchase
+  needed** — solved by matching technique to tool per bench (§C): the alligator-clip bench
+  does the LED exercise free-air; the SN-390 bench clamps a perfboard instead. Both benches
+  run in parallel, just with different soldering technique.
 - 2nd-3rd VIFLY ShortSaver 2 smoke stopper — have 1 (enough); more avoids a W7 bottleneck.
 - [x] ORDERED 2026-09-03 (see §G) — 2nd flux — see §B (NC-559-ASM gel flux x2).
 - [x] ORDERED 2026-09-03 (see §G) — Solder-practice kits — NE555 blinking-LED kit x5. Controlled
